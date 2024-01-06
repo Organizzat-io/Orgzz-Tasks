@@ -7,7 +7,7 @@ import (
 )
 
 func OpenDbConnection() *gorm.DB {
-	dsn := "host=localhost user=postgres password=053079 dbname=orgzz-tasks port=5432"
+	dsn := "postgresql://doadmin:AVNS_HXrvyZ0xXpIgkRQNoaH@db-postgresql-nyc3-51555-do-user-15529344-0.c.db.ondigitalocean.com:25060/defaultdb?sslmode=require"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 
 	if err != nil {
